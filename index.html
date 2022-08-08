@@ -61,7 +61,7 @@
            justify-between
            items-center
            px-4
-           md:px-12
+           xl:px-12
            sm:px-12
            lg:px-12
            transition-all
@@ -72,7 +72,7 @@
             <b>MAUUA</b>
         </a>
         <nav>
-            <button class="md:hidden" @click="navOpen = !navOpen">
+            <button class="xl:hidden" @click="navOpen = !navOpen">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
@@ -93,7 +93,7 @@
                     transition
                     duration-300
                     translate-x-full
-                    md:relative md:flex md:space-x-10 md:min-h-0 md:px-0 md:py-0 md:space-y-0 md:translate-x-0
+                    xl:relative xl:flex xl:space-x-10 xl:min-h-0 xl:px-0 xl:py-0 xl:space-y-0 xl:translate-x-0
                  " :class="{'translate-x-full': !navOpen}">
                 <li class="">
                     <a href="./Mauua.html" @click="navOpen = false">Home</a>
@@ -112,17 +112,17 @@
     </header>
 
 
-    <section class="pt-32 pb-16 px-8 md:px-12 bg-blue-500">
-        <div class="max-w-7xl mx-auto md:flex md:items-center md:justify-between">
-            <div class="md:flex-1 md:mr-6">
-                <h1 class="font-bold text-4xl md:text-5xl text-white leading-tight">
+    <section class="pt-32 pb-16 px-8 xl:px-12 bg-blue-500">
+        <div class="max-w-7xl mx-auto xl:flex xl:items-center xl:justify-between">
+            <div class="xl:flex-1 xl:mr-6">
+                <h1 class="font-bold text-4xl xl:text-5xl text-white leading-tight">
                     The Quickest way to Chat with your Loved Ones
                 </h1>
                 <p class="mt-4 text-lg text-white">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aspernatur magni vitae veritatis.
                 </p>
             </div>
-            <div class="md:flex-1">
+            <div class="xl:flex-1">
                 <img src="https://res.cloudinary.com/thirus/image/upload/v1632162912/logos/chat_ys7mog.svg" alt="Chat with loved ones">
             </div>
         </div>
@@ -219,26 +219,26 @@
     </section>
 
     <section id="contact" class="min-h-screen  bg-gray-400 items-center justify-center flex w-full">
-        <div class=" bg-red-200 w-full px-10 py-10 md:py-24" id="contact">
-            <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary md:text-5xl lg:text-6xl w-5/6 w-full">
+        <div class=" bg-red-200 w-full px-10 py-10 xl:py-24" id="contact">
+            <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary xl:text-5xl lg:text-6xl w-5/6 w-full">
                 Here's a contact form
             </h2>
-            <h4 class="pt-6 text-center font-header text-xl font-medium text-black md:text-2xl lg:text-3xl">
+            <h4 class="pt-6 text-center font-header text-xl font-medium text-black xl:text-2xl lg:text-3xl">
                 Have Any Questions?
             </h4>
-            <form class="mx-auto w-full pt-10 md:w-3/4" onsubmit="sendemailtmp()" id="form">
-                <div class="flex flex-col md:flex-row">
-                    <input class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5" placeholder="Name" type="text" id="name_contact" name="from_name" required>
-                    <input class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5" placeholder="Email" type="email" id="email_contact" name="reply_to" required>
+            <form class="mx-auto w-full pt-10 xl:w-3/4" onsubmit="sendemailtmp()" id="form">
+                <div class="flex flex-col xl:flex-row">
+                    <input class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black xl:w-1/2 lg:mr-5" placeholder="Name" type="text" id="name_contact" name="from_name" required>
+                    <input class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black xl:mt-0 xl:ml-3 xl:w-1/2 lg:ml-5" placeholder="Email" type="email" id="email_contact" name="reply_to" required>
                 </div>
-                <textarea class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8" placeholder="Message" id="Message-contact" cols="30" rows="10" name="message"></textarea>
+                <textarea class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black xl:mt-8" placeholder="Message" id="Message-contact" cols="30" rows="10" name="message"></textarea>
                 <button type="submit" class="mt-6 flex items-center justify-center rounded bg-black px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20">
                     Send
                     <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
                 </button>
             </form>
             <div class="flex flex-col px-6 pt-16 lg:flex-row w-full">
-                <div class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 md:py-8 lg:w-1/3">
+                <div class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 xl:py-8 lg:w-1/3">
                     <div class="flex items-center">
                         <i class="bx bx-phone text-2xl text-grey-40"></i>
                         <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
@@ -251,7 +251,7 @@
                         <a href="tel:03214255404">03214255404</a>
                     </p>
                 </div>
-                <div class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 md:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+                <div class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 xl:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
                     <div class="flex items-center">
                         <i class="bx bx-envelope text-2xl text-grey-40"></i>
                         <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
@@ -267,7 +267,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 md:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+                <div class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 xl:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
                     <div class="flex items-center">
                         <i class="bx bx-map text-2xl text-grey-40"></i>
                         <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
@@ -291,7 +291,7 @@
     </section>
 
     <footer class="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-24">
-        <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col xl:flex-row">
             <div class="w-full lg:w-2/6 lg:mx-4 lg:pr-8">
                 <h3 class="font-bold text-2xl">MAUUA</h3>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
