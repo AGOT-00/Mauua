@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+    <title>MAUUA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body translate="no" x-data="{navOpen: false, scrolledFromTop: false}" x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" :class="{
+        'overflow-hidden': navOpen,
+        'overflow-scroll': !navOpen
+        }" class="overflow-scroll">
+    <header class="fixed w-full bg-blue-500 flex justify-between items-center px-4 md:px-12 transition-all duration-200 h-24" :class="{'h-24': !scrolledFromTop, 'h-14': scrolledFromTop}">
+        <a href="#">
+            <!-- <img src="https://res.cloudinary.com/thirus/image/upload/v1631988912/logos/chitchat-logo_pkpwwu.png" alt="ChitChat Logo" class="h-12 transform origin-left transition duration-200 scale-100" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+         -->
+            <b>MAUUA</b>
+        </a>
+        <nav>
+            <button class="md:hidden" @click="navOpen = !navOpen">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                 </svg>
+              </button>
+            <ul class="
+                    fixed
+                    left-0
+                    right-0
+                    min-h-screen
+                    px-4
+                    pt-8
+                    space-y-4
+                    bg-blue-500
+                    text-white
+                    transform
+                    transition
+                    duration-300
+                    translate-x-full
+                    md:relative md:flex md:space-x-10 md:min-h-0 md:px-0 md:py-0 md:space-y-0 md:translate-x-0
+                 " :class="{'translate-x-full': !navOpen}">
+                <li class="">
+                    <a href="./Mauua.html" @click="navOpen = false">Home</a>
+                </li>
+                <li class="">
+                    <a href="./Mauua.html#features" @click="navOpen = false">Products</a>
+                </li>
+                <li>
+                    <a href="./Contact.html" @click="navOpen = false">Contact</a>
+                </li>
+                <li>
+                    <a href="./About.html" @click="navOpen = false">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="pt-32 pb-16 px-8 md:px-12 bg-blue-500">
+        <div class="max-w-7xl mx-auto md:flex md:items-center md:justify-between">
+            <div class="md:flex-1 md:mr-6">
+                <h1 class="font-bold text-4xl md:text-5xl text-white leading-tight">
+                    Uncle Khawar
+                </h1>
+                <p class="mt-4 text-lg text-white">
+                    KLINKS
+                </p>
+            </div>
+            <div class="md:flex-1">
+                <img src="https://res.cloudinary.com/thirus/image/upload/v1632162912/logos/chat_ys7mog.svg" alt="Chat with loved ones">
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.4.0/cdn.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
