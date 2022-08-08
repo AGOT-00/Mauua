@@ -2,16 +2,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-    <meta name="apple-mobile-web-app-title" content="CodePen">
-    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
     <title>MAUUA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
 
     <style>
         html {
             scroll-behavior: smooth;
+        }
+        
+        #table_product {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 25px;
+            min-width: 400px;
+        }
+        
+        td {
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+            /* width: 250px;
+            margin: 100px;
+            font-size: xx-large; */
+        }
+        
+        tr {
+            width: 250px;
+            margin: 100px;
         }
     </style>
 
@@ -35,8 +52,21 @@
 <body translate="no" x-data="{navOpen: false, scrolledFromTop: false}" x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" :class="{
         'overflow-hidden': navOpen,
         'overflow-scroll': !navOpen
-        }" class="overflow-scroll w-full bg-pink-500">
-    <header class="fixed w-full bg-blue-500 flex justify-between items-center px-4 md:px-12 sm:px-12 lg:px-12 xl:px-12 transition-all duration-200 h-24" :class="{'h-24': !scrolledFromTop,'items-center':!scrolledFromTop,'items-end':scrolledFromTop, 'h-28': scrolledFromTop}">
+        }" class="overflow-scroll w-full">
+    <header class="
+           fixed
+           w-full
+           bg-blue-500
+           flex
+           justify-between
+           items-center
+           px-4
+           md:px-12
+           sm:px-12
+           transition-all
+           duration-200
+           h-24
+        " :class="{'h-24': !scrolledFromTop, 'h-14': scrolledFromTop}">
         <a href="#" style="align-self: center;">
             <b>MAUUA</b>
         </a>
@@ -52,6 +82,7 @@
                     fixed
                     left-0
                     right-0
+                    min-h-screen
                     px-4
                     pt-8
                     space-y-4
@@ -61,41 +92,13 @@
                     transition
                     duration-300
                     translate-x-full
-                       
-                    
-                    lg:relative
-                    lg:flex 
-                    lg:space-x-10 
-                    lg:min-h-0 
-                    lg:px-0 
-                    lg:py-0 
-                    lg:space-y-0 
-                    lg:translate-x-0
-                          
-                       
-                    md:relative
-                    md:flex 
-                    md:space-x-10 
-                    md:min-h-0 
-                    md:px-0 
-                    md:py-0 
-                    md:space-y-0 
-                    md:translate-x-0
-                       
-                    sm:relative
-                    sm:flex 
-                    sm:space-x-10 
-                    sm:min-h-0 
-                    sm:px-0 
-                    sm:py-0 
-                    sm:space-y-0 
-                    sm:translate-x-0   
+                    md:relative md:flex md:space-x-10 md:min-h-0 md:px-0 md:py-0 md:space-y-0 md:translate-x-0
                  " :class="{'translate-x-full': !navOpen}">
                 <li class="">
                     <a href="./Mauua.html" @click="navOpen = false">Home</a>
                 </li>
                 <li class="">
-                    <a href="#features" @click="navOpen = false">Products</a>
+                    <a href="#Products" @click="navOpen = false">Products</a>
                 </li>
                 <li>
                     <a href="#contact" @click="navOpen = false">Contact</a>
@@ -124,11 +127,97 @@
         </div>
     </section>
 
-    <section id="features" class="">
+    <section id="Products" class="min-h-screen  bg-black " style="padding-top: 28px;">
+        <table class="text-white" id="table_product">
+            <tr>
+                <th><b>Panel Accessories   =   </b></th>
+                <th><b>Tools</b></th>
+                <th><b>Components</b></th>
 
+            </tr>
+            <tr>
+                <td>Panel Locks</td>
+                <td> Hand Luges Plyer</td>
+                <td>Breakors</td>
+            </tr>
+            <tr>
+                <td>PVC Duct</td>
+                <td>Hydraulic Plyer</td>
+                <td>Contactors</td>
+            </tr>
+            <tr>
+                <td>PVC Lower Jali </td>
+                <td>Wire Cutters</td>
+                <td>Selecter Switches</td>
+            </tr>
+            <tr>
+                <td>Panel Fan</td>
+                <td>Pullers</td>
+                <td>Panel Meters</td>
+            </tr>
+            <tr>
+                <td>Bus Bars</td>
+                <td>Electric Bus Bar Machine</td>
+                <td>Relays</td>
+            </tr>
+            <tr>
+                <td>Insulators</td>
+                <td></td>
+                <td>Photo Switches</td>
+            </tr>
+            <tr>
+                <td>
+                    Neotal Links
+                </td>
+
+                <td></td>
+                <td>Sensors</td>
+            </tr>
+            <tr>
+                <td>
+                    Strips
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Panel Light
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Push Buttons
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Line Up
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Glands
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Spiral Pipes
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Thimbals
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Numbering
+                </td>
+            </tr>
+
+        </table>
     </section>
 
-    <section id="contact" class="  bg-gray-400 items-center justify-center flex w-full">
+    <section id="contact" class="min-h-screen  bg-gray-400 items-center justify-center flex w-full">
         <div class=" bg-red-200 w-full px-10 py-10 md:py-24" id="contact">
             <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary md:text-5xl lg:text-6xl w-5/6 w-full">
                 Here's a contact form
